@@ -1,10 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Cloud Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cloud Project</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1d2671, #c33764);
+            color: white;
+        }
+
+        header {
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #ffd369;
+        }
+
+        .hero {
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            border: none;
+            background: #ffd369;
+            color: black;
+            font-size: 1rem;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            opacity: 0.8;
+        }
+    </style>
 </head>
-<body style="text-align:center; margin-top:50px;">
-    <h1>🚀 Deployed on AWS EC2</h1>
-    <p>This is a simple cloud computing project</p>
+<body>
+
+    <header>
+        <h2>🚀 CloudDeploy</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Project</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Deployed on AWS EC2</h1>
+        <p>This is a simple cloud computing project using Flask & EC2</p>
+        <button class="btn" onclick="showMessage()">Explore</button>
+    </section>
+
+    <footer>
+        <p>© 2026 Cloud Project | Built by You 💪</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            alert("🔥 Your website is successfully running on EC2!");
+        }
+    </script>
+
 </body>
 </html>
